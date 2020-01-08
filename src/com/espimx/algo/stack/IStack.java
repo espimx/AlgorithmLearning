@@ -23,10 +23,12 @@ public class IStack<E> {
             temp.next = top;
             top = temp;
         }
+        size++;
     }
 
     /**
-     * 入栈
+     * 出栈
+     * 获取top节点的值，使top节点指向下一个节点
      */
     public E pop() {
         if (top == null) {
@@ -34,10 +36,32 @@ public class IStack<E> {
         }
         E e = top.element;
         top = top.next;
+        size--;
         return e;
     }
+    
+    /**
+     * 获取栈顶元素的值，但是不移除栈顶元素
+     */
+    public E peek() {
+        return top == null ? null : top.element;
+    }
+    
+    /**
+     * 栈是否为空
+     */
+    public boolean isEmpty() {
+        return top == null;
+    }
+    
+    /**
+     * 栈中元素个数
+     */
+    public int size() {
+        return size;
+    }
 
-    public void printStack() {
+    private void printStack() {
         Node<E> temp = top;
         while (temp != null) {
             System.out.print(temp.element + " ");
