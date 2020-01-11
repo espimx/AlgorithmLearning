@@ -35,19 +35,19 @@ public class ILinkedList<E> extends IAbstractList<E> {
 
     @Override
     public void clear() {
+        while (head != null) {
+            Node<E> temp = head.next;
+            head.next = null;
+            head.element = null;
+            head = temp;
+        }
         head = tail = null;
         size = 0;
     }
 
     @Override
     public boolean contains(E e) {
-        Node<E> temp = head;
-        for (int i = 0; i < size; i++) {
-            if (temp.element == e) {
-                return true;
-            }
-        }
-        return false;
+        return indexOf(e) != -1;
     }
 
     @Override
@@ -70,7 +70,7 @@ public class ILinkedList<E> extends IAbstractList<E> {
     public int indexOf(E e) {
         Node<E> temp = head;
         for (int i = 0; i < size; i++) {
-            if (temp.element == e) {
+            if (temp.element.equals(e)) {
                 return i;
             } else {
                 temp = temp.next;
@@ -81,7 +81,7 @@ public class ILinkedList<E> extends IAbstractList<E> {
 
     @Override
     public int lastIndexOf(E e) {
-        int result = 0;
+        int result = -1;
         Node<E> temp = head;
         for (int i = 0; i < size; i++) {
             if (temp.element == e) {
@@ -95,33 +95,53 @@ public class ILinkedList<E> extends IAbstractList<E> {
     @Override
     public E remove(int index) {
         checkIndex(index);
-        Node<E> temp = head;
         if (index == 0) {
-            //删除链表头部节点
-            head = head.next;
-            if (head == null) {
-                tail = null;
-            }
+            return removeFirst();
         } else if (index == size - 1) {
-            //删除链表尾部节点
-            for (int i = 0; i < size - 2; i++) {
-                temp = temp.next;
-            }
-            temp.next = null;
-            tail = temp;
+            return removeLast();
         } else {
             //删除链表中间节点
+            Node<E> temp = head;
             for (int i = 0; i < index - 1; i++) {
                 temp = temp.next;
             }
+            E result = temp.next.element;
             temp.next = temp.next.next;
+            size--;
+            return result;
+        }
+    }
+
+    /**
+     * 删除链表头部节点
+     */
+    public E removeFirst() {
+        E result = head.element;
+        head = head.next;
+        if (head == null) {
+            tail = null;
         }
         size--;
-        return temp.element;
+        return result;
+    }
+
+    /**
+     * 删除链表尾部节点
+     */
+    public E removeLast() {
+        Node<E> temp = head;
+        for (int i = 0; i < size - 2; i++) {
+            temp = temp.next;
+        }
+        E result = temp.next.element;
+        temp.next = null;
+        tail = temp;
+        size--;
+        return result;
     }
 
     @Override
-    public Object set(int index, E e) {
+    public E set(int index, E e) {
         Node<E> temp = head;
         E result;
         for (int i = 0; i < index; i++) {

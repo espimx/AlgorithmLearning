@@ -2,10 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e252b804-cbec-401d-8b83-dc2e84338250" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/espimx/algo/heap/Heap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/espimx/algo/sorts/BubbleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/espimx/algo/sorts/QuickSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/espimx/algo/list/IDoubleLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/espimx/algo/queue/IAbstractQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/espimx/algo/queue/IQueueByArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/espimx/algo/queue/IQueueByStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/espimx/algo/list/IAbstractList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/espimx/algo/list/IAbstractList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/espimx/algo/list/IArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/espimx/algo/list/IArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/espimx/algo/list/ILinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/espimx/algo/list/ILinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/espimx/algo/list/IList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/espimx/algo/list/IList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/espimx/algo/queue/IQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/espimx/algo/queue/IQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/espimx/algo/stack/IStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/espimx/algo/stack/IStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/espimx/algo/test/LinkedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/espimx/algo/test/LinkedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/espimx/algo/test/QueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/espimx/algo/test/QueueTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/espimx/algo/test/StackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/espimx/algo/test/StackTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +28,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -58,29 +71,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Heap">
-    <configuration name="ArrayTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.espimx.algo.test.ArrayTest" />
-      <module name="AlgorithmLearning" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.espimx.algo.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.espimx.algo.sorts.BubbleSort" />
-      <module name="AlgorithmLearning" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GraphTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.espimx.algo.test.GraphTest" />
       <module name="AlgorithmLearning" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -93,8 +86,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.espimx.algo.sorts.QuickSort" />
+    <configuration name="ListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.espimx.algo.test.ListTest" />
+      <module name="AlgorithmLearning" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueueTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.espimx.algo.test.QueueTest" />
+      <module name="AlgorithmLearning" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StackTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.espimx.algo.test.StackTest" />
       <module name="AlgorithmLearning" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ListTest" />
+        <item itemvalue="Application.QueueTest" />
+        <item itemvalue="Application.StackTest" />
         <item itemvalue="Application.Heap" />
         <item itemvalue="Application.BubbleSort" />
-        <item itemvalue="Application.QuickSort" />
-        <item itemvalue="Application.GraphTest" />
-        <item itemvalue="Application.ArrayTest" />
       </list>
     </recent_temporary>
   </component>
@@ -130,8 +137,20 @@
       <workItem from="1578211681463" duration="775000" />
       <workItem from="1578224964632" duration="1479000" />
       <workItem from="1578313086896" duration="1666000" />
-      <workItem from="1578397244892" duration="5396000" />
+      <workItem from="1578397244892" duration="6268000" />
+      <workItem from="1578483621795" duration="5256000" />
+      <workItem from="1578571639763" duration="2340000" />
+      <workItem from="1578664076733" duration="8614000" />
+      <workItem from="1578731304944" duration="5619000" />
     </task>
+    <task id="LOCAL-00001" summary="添加了堆和冒泡排序、快速排序的实现">
+      <created>1578408890148</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578408890148</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +168,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="添加了堆和冒泡排序、快速排序的实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加了堆和冒泡排序、快速排序的实现" />
   </component>
   <component name="masterDetails">
     <states>

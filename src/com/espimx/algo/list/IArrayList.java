@@ -82,11 +82,11 @@ public class IArrayList<E> extends IAbstractList<E> {
     }
 
     @Override
-    public Object set(int index, E e) {
+    public E set(int index, E e) {
         checkIndex(index);
         Object old = data[index];
         data[index] = e;
-        return old;
+        return (E) old;
     }
 
 

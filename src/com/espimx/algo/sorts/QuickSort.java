@@ -25,7 +25,7 @@ public class QuickSort {
     }
 
     /**
-     * 切分函数，返回切分点
+     * 切分函数(这里是双向切分)，返回切分点
      */
     private static int partition(int[] data, int start, int end) {
         int element = data[start];  //选取第一个元素作为基准元素

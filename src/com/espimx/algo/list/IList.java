@@ -56,7 +56,7 @@ public interface IList<E> extends Iterable<E> {
     /**
      * 替换指定位置的元素，返回替换之前的元素
      */
-    Object set(int index, E e);
+    E set(int index, E e);
 
     /**
      * 获取线性表中元素的个数

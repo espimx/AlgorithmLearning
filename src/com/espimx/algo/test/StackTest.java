@@ -10,8 +10,10 @@ public class StackTest {
         stack.push(8);
         stack.push(7);
         stack.push(1);
-        stack.printStack();
-        stack.pop();
-        stack.printStack();
+        System.out.println("容量: " + stack.size());
+        System.out.println("栈顶元素: " + stack.peek());
+        System.out.println("移出栈顶元素: " + stack.pop());
+        System.out.println("容量: " + stack.size());
+        System.out.println("是否为空: " + stack.isEmpty());
     }
 }

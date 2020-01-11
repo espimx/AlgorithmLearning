@@ -61,15 +61,6 @@ public class IStack<E> {
         return size;
     }
 
-    private void printStack() {
-        Node<E> temp = top;
-        while (temp != null) {
-            System.out.print(temp.element + " ");
-            temp = temp.next;
-        }
-        System.out.println();
-    }
-
     private static class Node<E> {
         E element;
         Node next;

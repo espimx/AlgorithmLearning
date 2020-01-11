@@ -43,7 +43,7 @@ public abstract class IAbstractList<E> implements IList<E> {
      */
     protected void checkIndex(int index) {
         if (index < 0 || index >= size) {
-            throw new IndexOutOfBoundsException();
+            throw new IndexOutOfBoundsException("index: " + index + ", size: " + size);
         }
     }
 }
