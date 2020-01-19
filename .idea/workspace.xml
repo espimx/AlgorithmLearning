@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e252b804-cbec-401d-8b83-dc2e84338250" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/espimx/algo/list/IDoubleLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/espimx/algo/queue/IAbstractQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/espimx/algo/queue/IQueueByArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/espimx/algo/queue/IQueueByStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/espimx/algo/list/IAbstractList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/espimx/algo/list/IAbstractList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/espimx/algo/list/IArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/espimx/algo/list/IArrayList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/espimx/algo/list/ILinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/espimx/algo/list/ILinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/espimx/algo/list/IList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/espimx/algo/list/IList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/espimx/algo/queue/IQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/espimx/algo/queue/IQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/espimx/algo/stack/IStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/espimx/algo/stack/IStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/espimx/algo/test/LinkedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/espimx/algo/test/LinkedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/espimx/algo/test/QueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/espimx/algo/test/QueueTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/espimx/algo/test/StackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/espimx/algo/test/StackTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +57,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ListTest">
     <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.espimx.algo.sorts.BubbleSort" />
       <module name="AlgorithmLearning" />
@@ -110,10 +96,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ListTest" />
+        <item itemvalue="Application.BubbleSort" />
         <item itemvalue="Application.QueueTest" />
         <item itemvalue="Application.StackTest" />
         <item itemvalue="Application.Heap" />
-        <item itemvalue="Application.BubbleSort" />
       </list>
     </recent_temporary>
   </component>
@@ -141,7 +127,11 @@
       <workItem from="1578483621795" duration="5256000" />
       <workItem from="1578571639763" duration="2340000" />
       <workItem from="1578664076733" duration="8614000" />
-      <workItem from="1578731304944" duration="5619000" />
+      <workItem from="1578731304944" duration="6623000" />
+      <workItem from="1578758867347" duration="2078000" />
+      <workItem from="1578807661083" duration="2509000" />
+      <workItem from="1578916216875" duration="625000" />
+      <workItem from="1579006366491" duration="48000" />
     </task>
     <task id="LOCAL-00001" summary="添加了堆和冒泡排序、快速排序的实现">
       <created>1578408890148</created>
@@ -150,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578408890148</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="添加了双向链表的实现，完善了一些细节，修改了一些bug">
+      <created>1578738498960</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578738498961</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +168,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加了堆和冒泡排序、快速排序的实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加了堆和冒泡排序、快速排序的实现" />
+    <MESSAGE value="添加了双向链表的实现，完善了一些细节，修改了一些bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加了双向链表的实现，完善了一些细节，修改了一些bug" />
   </component>
   <component name="masterDetails">
     <states>

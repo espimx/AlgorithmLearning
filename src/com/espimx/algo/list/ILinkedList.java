@@ -171,6 +171,22 @@ public class ILinkedList<E> extends IAbstractList<E> {
         return result.toString();
     }
 
+    /**
+     * 反转链表
+     */
+    public void reverseList() {
+        Node<E> prev = null;
+        Node<E> next = null;
+
+        while (head != null) {
+            next = head.next;
+            head.next = prev;
+            prev = head;
+            head = next;
+        }
+        head = prev;
+    }
+
     @Override
     public Iterator<E> iterator() {
         return new ILinkedListIterator();
